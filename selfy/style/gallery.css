@@ -1,0 +1,32 @@
+.gallery__one,
+.gallery__two{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__one--one,
+.gallery__one--two{
+    width: 50%;
+}
+
+.gallery__one--one{
+    padding-right: 1rem;
+}
+
+.gallery__one--two{
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 992px){
+    /* Gallery */
+    .gallery__one{
+        flex-direction: column;
+    }
+
+    .gallery__one--one,
+    .gallery__one--two{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

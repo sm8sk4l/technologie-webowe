@@ -1,0 +1,180 @@
+.contact{
+    margin-top: 3rem;
+    margin-bottom: 3.33rem;
+}
+.contact__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__form,
+.contact__networks,
+.contact__networks--links,
+.contact__form--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form--title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: #2d3438;
+    padding: 1.6rem 0 1.8rem;
+}
+
+.contact__form--desc{
+    font-family: 'Aleo', serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #3c4a52;
+    padding-bottom: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.contact__form--subtext{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #656a6f;
+    padding: 1rem 0 2.6rem;
+    line-height: 1.3rem;
+}
+
+#formUserEmail,
+#formUserMessage,
+#formUserName{
+    border: 1px solid #dde1e5;
+    background: #ffffff;
+    padding: 0.8rem 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: #969ca5;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 1rem;
+    resize: none;
+    width: 70%;
+}
+
+#formUserMessage{
+    width: 100%;
+}
+
+#send{
+    width: fit-content;
+    display: block;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #ffc000;
+    color: white;
+    padding: .7rem 1.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+
+    transition: .2s background-color linear;
+}
+
+#send:hover{
+    background-color: #646d72;
+}
+
+.contact__form{
+    width: 70%;
+    padding-right: 2rem;
+}
+
+.contact__networks{
+    width: 30%;
+    height: fit-content;
+    padding-left: 2.2rem;
+    border-left: 1px solid #cad2d7;
+}
+
+.contact__networks--links{
+    border-bottom: 1px solid #cad2d78c;
+    padding-bottom: 3.33rem;
+}
+
+.contact__networks--link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #656a6f;
+    padding: 0.5rem 0;
+    transition: .2s color linear;
+}
+
+.contact__networks--link:hover,
+.contact__networks--desc--link:hover{
+color: #ffc000;
+}
+
+.contact__networks--desc{
+    padding-top: 3.33rem;
+}
+
+.contact__networks--title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2d3438;
+}
+
+.contact__networks--desc p{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #656a6f;
+    line-height: 1.6rem;
+    padding-bottom: 1.1rem;
+}
+
+.contact__networks--desc--link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #3c4a52;
+
+    transition: .2s color linear;
+}
+
+@media screen and (max-width: 992px){
+    /* Contact */
+    .contact{
+        margin: 0 0 1rem;
+    }
+    .contact__inner{
+        flex-direction: column;
+    }
+
+    .contact__form{
+        width: 100% ;
+    }
+
+    .contact__form--title{
+        font-size: 3rem;
+    }
+
+    .contact__form--desc{
+        font-size: 1.5rem;
+    }
+
+    .contact__networks{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    .contact__networks--links{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    #formUserName,
+    #formUserEmail{
+        width: 100%;
+    }
+}

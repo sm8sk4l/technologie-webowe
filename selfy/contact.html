@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <img src="img/logo@2x.png" alt="Logo Selfy">
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav__link ">Home</a>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="styles.html" class="nav__link">Styles</a>
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                    <a href="blog.html" class="nav__link">Blog</a>
+                    <a href="contact.html" class="nav__link current__page">Contact</a>
+                </nav>
+                <div id="navToggle" class="burger__container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__form">
+                    <h1 class="contact__form--title dot">Contact Me</h1>
+                    <p class="contact__form--desc">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit
+                        non mi porta gravida at eget vel scelerisl consectetur etsie.</p>
+                    <p class="contact__form--subtext">Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus
+                        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus
+                        auctor fringilla.</p>
+
+                    <form action="#" class="contact__form--form" method="GET">
+                        <input type="text" placeholder="What's your name" id="formUserName">
+                        <input type="email" placeholder="Email goes here" id="formUserEmail" required>
+                        <textarea id="formUserMessage" minlength="10" name="message" rows="5" cols="20"
+                            placeholder="Whats this about?"></textarea>
+                        <input name="button" class="contact__form--btn" type="submit" value="Send Message" id="send">
+
+                    </form>
+                </div>
+                <div class="contact__networks">
+                    <div class="contact__networks--links">
+                        <h2 class="contact__networks--title dot">Networks</h2>
+                        <a href="#" class="contact__networks--link">Follow Me on Facebook</a>
+                        <a href="#" class="contact__networks--link">Hanging out on Dribble</a>
+                        <a href="#" class="contact__networks--link">Tweeting up a storm</a>
+                    </div>
+
+                    <div class="contact__networks--desc">
+                        <p>Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit
+                            sit ametr nulla non metus auctor fringilla.</p>
+
+                        <a href="#" class="contact__networks--desc--link">
+                            See the Full Theme Styles
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <img src="img/logo-foot@2x.png" alt="Logo">
+                    <p class="footer__copyright--text">
+                        &copy;Copyright Selfy 2013
+                    </p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social--link">
+                        <img src="img/icon-facebook@2x.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <img src="img/icon-twitter@2x.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <img src="img/icon-linkedin@2x.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

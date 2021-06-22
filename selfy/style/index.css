@@ -1,0 +1,140 @@
+/* Main background Image */
+.backimage{
+    position: absolute;
+    height: 110vh;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.backimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Wrapper */
+.wrapper__inner{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.wrapper__inner h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6.4rem;
+    color: white;
+    font-weight: 900;
+    padding: 1.66rem 0 1rem;
+}
+
+.wrapper__inner h3{
+    font-family: 'Aleo', serif;
+    font-style: italic;
+    font-size: 1.86rem;
+    color: #e2e2e2;
+    font-weight: normal;
+    padding: 0 0 1rem;
+}
+
+.wrapper__inner h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.86rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 0 2rem;
+}
+
+.wrapper__inner p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+.wrapper__inner a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3c4a52;
+    transition: .2s color linear;
+}
+
+.wrapper__inner a:hover{
+    color: #ffc000;
+
+}
+
+/* Content */
+.content{
+    margin: 3.33rem 0;
+}
+.content__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__inner--col{
+    width: 33.3%;
+    padding: 0 1rem;
+}
+
+.content__inner--col h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2D3438;
+}
+
+.content__inner--col h2::after{
+    content: ".";
+    font-size: 3.6rem;
+    position: relative;
+    padding-left: 3px;
+    color: #ffc000;
+}
+
+.content__inner--col p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 1rem 0 0;
+    color: #656a6f;
+}
+
+.emailcontact{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.33rem 0 0.5rem 1.2rem;
+    color: #3c4a52;
+    transition: .2s color linear;
+}
+
+@media screen and (max-width: 992px) {
+        /* Index */
+    .content__inner{
+        flex-direction: column;
+    }
+    .wrapper__inner{
+        margin-top: 0;
+    }
+
+    .content__inner--col{
+        width: 100% ;
+        margin-bottom: 1rem;
+    }
+
+    .wrapper__inner{
+        width: 100% ;
+    }
+
+    .wrapper__inner h1{
+        font-size: 4rem ;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+}
