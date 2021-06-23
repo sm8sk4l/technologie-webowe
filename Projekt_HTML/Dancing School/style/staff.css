@@ -1,0 +1,26 @@
+.staff{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 5rem;
+}
+
+.staff-card{
+    display: flex;
+
+    margin-bottom: 3rem;
+}
+
+.staff-card-img img{
+    width: 100%;
+}
+
+.staff-card-desc{
+    padding: 0 1rem 1.2rem 1.2rem;
+}
+
+@media only screen and (max-width: 768px){
+    .staff-card{
+        flex-wrap: wrap;
+    }
+}

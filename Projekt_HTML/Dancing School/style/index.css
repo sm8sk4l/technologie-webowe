@@ -1,0 +1,184 @@
+/* Move */
+.move{
+    padding: 4rem 0;
+    display: flex;
+}
+
+.move-img{
+    width: 35%;
+}
+
+.move-img img{
+    width: 100%;
+}
+
+.move-text{
+    width: 75%;
+    padding-left: 1.6rem;
+    padding-right: 5rem;
+}
+
+.move-text-title{
+    font-family: 'Economica', sans-serif;
+    font-size: 4rem;
+    color: #B878B5;
+    padding: 1.2rem 0;
+}
+
+.move-text p{
+    color: #636262;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* Music */
+.music{
+    display: flex;
+    width: 100%;
+}
+
+.music-card{
+    padding: 3.3rem;
+    margin: 0 .5rem;
+    text-align: center;
+
+    border: 1px solid #686868;
+}
+
+.music-card-title{
+    font-family: 'Economica', sans-serif;
+    font-size: 2.4rem;
+    color: #B878B5;
+
+    margin: 3.2rem 0 6rem;
+    padding-bottom: 3.2rem;
+
+    border-bottom: 1px solid #989797;
+}
+
+/* Publications */
+
+.publicat{
+    display: flex;
+}
+
+.publicat-content-title{
+    font-family: 'Economica', sans-serif;
+    font-size: 3.2rem;
+    margin: 3.2rem 0 12rem;
+    color: #B878B5;
+}
+
+.publicat-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.publicat-card{
+    padding-right: .9rem;
+    margin-bottom: 10rem;
+}
+
+.publicat-card-title{
+    font-family: 'Economica', sans-serif;
+    font-size: 2.4rem;
+    color: #7E4A7C;
+}
+
+.publicat-card-text{
+    font-size: 1.2rem;
+    margin: 2.4rem 0;
+}
+
+.publicat-img{
+    position: relative;
+}
+
+.publicat-img-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #af9aae;
+    padding-bottom: 7rem;
+    width: fit-content;
+    height: fit-content;
+
+    transition: .2s background-color linear;
+}
+
+.publicat-img-wrap img{
+    width: 100%;
+}
+
+.publicat-img-wrap:hover{
+    cursor: pointer;
+    background-color: #000;
+
+}
+
+.publicat-img-wrap-cam{
+    width: 55px !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 2rem;
+
+    color: #5e4d5b;
+}
+
+/* Popup image */
+
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    
+}
+
+.popup-image{
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Move */
+    .move{
+        flex-wrap: wrap;
+    }
+
+    .move-img,
+    .move-text{
+        width: 100%;
+    }
+
+    /* Music */
+    .music{
+        flex-wrap: wrap;
+    }
+
+    .music-card{
+        margin-bottom: 1rem;
+    }
+
+    /* Publications */
+    .publicat{
+        flex-wrap: wrap;
+    }
+
+    .publicat-img,
+    .publicat-img-wrap{
+        position: relative;
+    }
+}

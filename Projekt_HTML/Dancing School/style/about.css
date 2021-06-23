@@ -1,0 +1,107 @@
+/* About */
+.about{
+    display: flex;
+
+    padding: 4rem 0 8rem;
+
+    border-bottom: 1px solid #848383;
+}
+
+.about-img{
+    width: 30%;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-content{
+    width: 45%;
+    padding: 0 2.5rem;
+}
+
+.about-content-desc{
+    color: #7E4A7C;
+}
+
+.about-sidebar{
+    width: 25%;
+}
+
+/* Mission */
+.mission{
+    display: flex;
+    margin: 5rem 0;
+}
+
+.mission-text{
+    width: 75%;
+
+    padding-right: 2.5rem;
+}
+
+.mission-text-desc{
+    color: #7E4A7C;
+}
+
+.mission-quote{
+    width: 25%;
+
+    background-color: #af9aae;
+    padding: 4.5rem 3rem;
+}
+
+.mission-quote{
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-quote-title{
+    font-family: 'Economica', sans-serif;
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: left;
+}
+
+.mission-quote p{
+    font-size: 1.2rem;
+    color: #636262;
+    margin: 1.86rem 0 2rem;
+    font-weight: 500;
+
+    line-height: 1.6rem;
+}
+
+.mission-quote-author{
+    font-family: 'Economica', sans-serif;
+    font-size: 1.6rem;
+    text-align: right;
+    color: #80637f;
+    line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* About */
+    .about{
+        flex-wrap: wrap;
+    }
+
+    .about-img,
+    .about-content,
+    .about-sidebar{
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Mission */
+    .mission{
+        flex-wrap: wrap;
+    }
+
+    .mission-text,
+    .mission-quote{
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+}
+
